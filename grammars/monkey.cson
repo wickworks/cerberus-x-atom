@@ -33,6 +33,22 @@ patterns : [
       )
     '''
     name: "constant.numeric.float.monkey"
+  },
+  {
+    comment: 'Global declaration'
+    captures:
+      "1":
+        name: "storage.modifier.global.monkey"
+    match: "(?i)\\b(global)\\s+([a-zA-Z_]\\w*)\\b"
+    name: "variable.monkey"
+  },
+  {
+    comment: 'Local declaration'
+    captures:
+      "1":
+        name: "storage.modifier.local.monkey"
+    match: "(?i)\\b(local)\\s+([a-zA-Z_]\\w*)\\b"
+    name: "variable.monkey"
   }
 ]
 
