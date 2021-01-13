@@ -1,49 +1,22 @@
 {
-  "_from": "https://www.atom.io/api/packages/monkey-x/versions/0.1.0/tarball",
-  "_id": "monkey-x@0.1.0",
-  "_inBundle": false,
-  "_integrity": "sha512-JYh6rh6TMxPNZ0CqrQ/m/6rdl6vHCL+Hfcn4Cke8JI+0V/ov7KTyYQbnOEb/vBIlHTfLooxKp5iGdmwU7r6GSw==",
-  "_location": "/monkey-x",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "remote",
-    "raw": "https://www.atom.io/api/packages/monkey-x/versions/0.1.0/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/monkey-x/versions/0.1.0/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/monkey-x/versions/0.1.0/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/monkey-x/versions/0.1.0/tarball"
+  "name": "monkey-x",
+  "version": "0.1.1",
+  "description": "Syntax highlighting and snippets for the cerberus-x programming language.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frameland/atom-monkey.git"
   },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://www.atom.io/api/packages/monkey-x/versions/0.1.0/tarball",
-  "_shasum": "879c4b486f9422eb9c88a3a3f3cef97e7bb29e63",
-  "_spec": "https://www.atom.io/api/packages/monkey-x/versions/0.1.0/tarball",
-  "_where": "C:\\Users\\wik\\AppData\\Local\\Temp\\apm-install-dir-2021012-6588-1n6dddj.o8m5",
-  "activationHooks": [
-    "language-monkey:grammar-used"
-  ],
-  "bugs": {
-    "url": "https://github.com/frameland/atom-monkey/issues"
-  },
-  "bundleDependencies": false,
-  "dependencies": {},
-  "deprecated": false,
-  "description": "Syntax highlighting and snippets for the monkey-x programming language.",
-  "engines": {
-    "atom": ">=1.0.0 <2.0.0"
-  },
-  "homepage": "https://github.com/frameland/atom-monkey#readme",
   "keywords": [
     "monkey",
     "monkey-x",
     "game programming language"
   ],
   "license": "MIT",
-  "name": "monkey-x",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/frameland/atom-monkey.git"
+  "bugs": {
+    "url": "https://github.com/frameland/atom-monkey/issues"
   },
-  "version": "0.1.0"
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/frameland/atom-monkey#readme"
 }
