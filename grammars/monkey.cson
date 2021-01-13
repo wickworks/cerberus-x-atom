@@ -8,10 +8,16 @@ limitLineLength: false
 
 patterns : [
   {
-    comment: 'Use this to explain the function of the rule, if necessary'
+    comment: 'Basic comment character!'
     name: 'comment.line.apostrophe.monkey'
     begin: "'"
     end: "$"
+  },
+  {
+    comment: 'String data'
+    name: "string.quoted.double.monkey"
+    begin: "\""
+    end: "\""
   }
 ]
 
