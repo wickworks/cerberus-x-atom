@@ -1,5 +1,6 @@
 fileTypes: [
-  "monkey"
+  "monkey",
+  "cxs"
 ]
 foldingStartMarker: '''
   (?xi)
