@@ -1054,16 +1054,16 @@
         body: '${1:object}.New(${2:stack:Stack<T>})$0'
         leftLabelHTML: '<span class="monkey-method">m</span>'
         rightLabelHTML: 'Void'
-    'BackwardsEnumerator<T>.HasNext()':
-        prefix: 'BackwardsEnumerator<T>.HasNext()'
-        body: '${1:object}.HasNext()$0'
-        leftLabelHTML: '<span class="monkey-method">m</span>'
-        rightLabelHTML: 'Bool'
-    'BackwardsEnumerator<T>.NextObject()':
-        prefix: 'BackwardsEnumerator<T>.NextObject()'
-        body: '${1:object}.NextObject()$0'
-        leftLabelHTML: '<span class="monkey-method">m</span>'
-        rightLabelHTML: 'T'
+    # 'BackwardsEnumerator<T>.HasNext()':
+    #     prefix: 'BackwardsEnumerator<T>.HasNext()'
+    #     body: '${1:object}.HasNext()$0'
+    #     leftLabelHTML: '<span class="monkey-method">m</span>'
+    #     rightLabelHTML: 'Bool'
+    # 'BackwardsEnumerator<T>.NextObject()':
+    #     prefix: 'BackwardsEnumerator<T>.NextObject()'
+    #     body: '${1:object}.NextObject()$0'
+    #     leftLabelHTML: '<span class="monkey-method">m</span>'
+    #     rightLabelHTML: 'T'
     'IntStack.New(data:Int[])':
         prefix: 'IntStack.New(data:Int[])'
         body: '${1:object}.New(${2:data:Int[]})$0'
