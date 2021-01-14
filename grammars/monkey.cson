@@ -58,8 +58,8 @@ patterns : [
     name: "constant.numeric.float.monkey"
   },
   {
-    comment: 'Boolean data'
-    match: "(?i)\\b(true|false)\\b"
+    comment: 'Boolean data -- null is kinda like a bool'
+    match: "(?i)\\b(true|false|null)\\b"
     name: "constant.language.boolean.monkey"
   },
   {
@@ -73,9 +73,24 @@ patterns : [
     name: "keyword.operator.monkey"
   },
   {
-    comment: 'Math keywords'
+    comment: 'Constants'
+    match: "\\b[A-Z_][A-Z_][A-Z_]*\\b"
+    name: "variable.constant.monkey"
+  },
+  {
+    comment: 'Math symbols'
     match: ":?[\\^+\\-&~|=><]"
     name: "keyword.operator.monkey"
+  },
+  {
+    comment: 'Control symbols'
+    match: ":?[\\.\\(\\)]"
+    name: "keyword.operator.monkey"
+  },
+  {
+    comment: 'Class shortcut symbols'
+    match: ":?[%$?]"
+    name: "entity.name.type.monkey"
   },
   {
     comment: 'More keywords'
