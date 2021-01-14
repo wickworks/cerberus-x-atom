@@ -106,28 +106,20 @@ patterns : [
     name: "keyword.other.scope.monkey"
   },
   {
-    comment: 'Global declaration'
+    comment: 'Variable declaration'
     captures:
       "1":
         name: "storage.modifier.global.monkey"
-    match: "(?i)\\b(global)\\s+([a-zA-Z_]\\w*)\\b"
+    match: "(?i)\\b(global|local|field)\\s+([a-zA-Z_]\\w*)\\b"
     name: "entity.other.monkey"
   },
   {
-    comment: 'Local declaration'
+    comment: 'Constant declaration'
     captures:
       "1":
-        name: "storage.modifier.local.monkey"
-    match: "(?i)\\b(local)\\s+([a-zA-Z_]\\w*)\\b"
-    name: "entity.other.monkey"
-  },
-  {
-    comment: 'Field declaration'
-    captures:
-      "1":
-        name: "storage.modifier.field.monkey"
-    match: "(?i)\\b(field)\\s+([a-zA-Z_]\\w*)+\\b"
-    name: "entity.other.monkey"
+        name: "storage.modifier.global.monkey"
+    match: "(?i)\\b(const)\\s+([a-zA-Z_]\\w*)\\b"
+    name: "variable.constant.monkey"
   },
   {
     comment: 'Variable class declaration e.g. variable:Class'
