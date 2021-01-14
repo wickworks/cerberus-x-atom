@@ -61,8 +61,8 @@ patterns : [
     name: "constant.numeric.float.monkey"
   },
   {
-    comment: 'Boolean data -- null is kinda like a bool'
-    match: "(?i)\\b(true|false|null)\\b"
+    comment: 'Boolean data -- null is kinda like a bool. I have no excuse for my self.'
+    match: "(?i)\\b(true|false|null|self)\\b"
     name: "constant.language.boolean.monkey"
   },
   {
