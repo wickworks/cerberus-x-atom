@@ -6,22 +6,39 @@ fileTypes: [
 ]
 limitLineLength: false
 
+# NAME                              COLOR
+# comment.line.monkey               grey
+
+# string.quoted.monkey              green
+
+# constant.numeric.monkey           orange
+# constant.language.boolean.monkey
+
+# storage.type.class.monkey         purple
+# storage.modifier.field.monkey
+
+# variable.monkey                   red
+
+# entity.name.type.monkey           yellow
+
+# support.function.monkey           blue
+
 patterns : [
   {
     comment: 'Basic comment character!'
-    name: 'comment.line.apostrophe.monkey'
+    name: 'comment.line.monkey'
     begin: "'"
     end: "$"
   },
   {
     comment: 'String data'
-    name: "string.quoted.double.monkey"
+    name: "string.quoted.monkey"
     begin: "\""
     end: "\""
   },
   {
     comment: 'Integer data'
-    name: "constant.numeric.integer.monkey"
+    name: "constant.numeric.monkey"
     match: "(?x)\\b(([0-9]+))"
   },
   {
@@ -33,6 +50,11 @@ patterns : [
       )
     '''
     name: "constant.numeric.float.monkey"
+  },
+  {
+    comment: 'Boolean data'
+    match: "(?i)\\b(true|false)\\b"
+    name: "constant.language.boolean.monkey"
   },
   {
     comment: 'Global declaration'
@@ -54,7 +76,7 @@ patterns : [
     comment: 'Field declaration'
     captures:
       "1":
-        name: "storage.modifier.global.monkey"
+        name: "storage.modifier.field.monkey"
     match: "(?i)\\b(field)\\s+([a-zA-Z_]\\w*)+\\b"
     name: "variable.monkey"
   },
@@ -81,6 +103,15 @@ patterns : [
       "5":
         name: "storage.modifier.class.monkey"
     name: "type.monkey"
+  },
+  {
+    match: "(?i)\\b(method)\\s+([a-zA-Z_]\\w*)\\b"
+    captures:
+      "1":
+        name: "storage.modifier.field.monkey"
+      "2":
+        name: "support.function.monkey"
+    name: "method.monkey"
   }
 ]
 
