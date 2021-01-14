@@ -131,7 +131,7 @@ patterns : [
   },
   {
     comment: 'Class definition'
-    match: "(?i)\\b(class)\\s+([a-zA-Z_]\\w*)(?:\\s+(extends)\\s+([a-zA-Z_]\\w*))?(?:\\s+(final|abstract))?"
+    match: "(?i)\\b(class)\\s+([a-zA-Z_]\\w*)(?:\\s+(extends|implements)\\s+([a-zA-Z_]\\w*))?(?:\\s+(final|abstract))?"
     captures:
       "1":
         name: "storage.type.class.monkey"
