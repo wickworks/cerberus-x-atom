@@ -49,6 +49,38 @@ patterns : [
         name: "storage.modifier.local.monkey"
     match: "(?i)\\b(local)\\s+([a-zA-Z_]\\w*)\\b"
     name: "variable.monkey"
+  },
+  {
+    comment: 'Field declaration'
+    captures:
+      "1":
+        name: "storage.modifier.global.monkey"
+    match: "(?i)\\b(field)\\s+([a-zA-Z_]\\w*)+\\b"
+    name: "variable.monkey"
+  },
+  {
+    comment: 'Variable class declaration e.g. variable:Class'
+    captures:
+      "1":
+        name: "keyword.operator.monkey"
+    match: "(?i)\\b(:=?\\s?)+([a-zA-Z_]\\w*)\\b"
+    name: "entity.name.type.monkey"
+  },
+  {
+    comment: 'Class definition'
+    match: "(?i)\\b(class)\\s+([a-zA-Z_]\\w*)(?:\\s+(extends)\\s+([a-zA-Z_]\\w*))?(?:\\s+(final|abstract))?"
+    captures:
+      "1":
+        name: "storage.type.class.monkey"
+      "2":
+        name: "entity.name.type.monkey"
+      "3":
+        name: "storage.modifier.extends.monkey"
+      "4":
+        name: "entity.other.inherited-class.monkey"
+      "5":
+        name: "storage.modifier.class.monkey"
+    name: "type.monkey"
   }
 ]
 
