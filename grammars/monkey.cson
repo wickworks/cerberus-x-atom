@@ -121,7 +121,7 @@ patterns : [
       "1":
         name: "storage.modifier.field.monkey"
       "2":
-        name: "support.function.menthod.monkey"
+        name: "support.function.method.monkey"
     name: "method.monkey"
   },
   {
@@ -133,6 +133,18 @@ patterns : [
       "2":
         name: "support.function.monkey"
     name: "method.monkey"
+  },
+  {
+    comment: 'Method call'
+    match: "(\\.)(\\w*)(\\()"
+    captures:
+      "1":
+        name: "keyword.operator.monkey"
+      "2":
+        name: "support.function.method.monkey"
+      "3":
+        name: "keyword.operator.monkey"
+    name: "support.function.method.monkey"
   }
 ]
 
