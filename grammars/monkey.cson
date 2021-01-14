@@ -151,14 +151,12 @@ patterns : [
     name: "method.monkey"
   },
   {
-    comment: 'Method call'
-    match: "(\\.)(\\w*)(?=\\()"
+    comment: 'Method call (including print calls w/o parens)'
+    match: '\\b([a-zA-Z_]\\w*)(?=\\(|\\s\\")'
     captures:
       "1":
-        name: "keyword.operator.monkey"
-      "2":
         name: "support.function.method.monkey"
-      "3":
+      "2":
         name: "keyword.operator.monkey"
     name: "support.function.method.monkey"
   },
