@@ -31,6 +31,12 @@ patterns : [
     end: "$"
   },
   {
+    comment: 'Comment block'
+    begin: "(?i)(?<=\\s|^|;)\\#rem\\b"
+    end: "(?i)(?<=\\s|^|;)\\#end\\b"
+    name: "comment.block.rem.monkey"
+  },
+  {
     comment: 'String data'
     name: "string.quoted.monkey"
     begin: "\""
@@ -109,7 +115,18 @@ patterns : [
     name: "type.monkey"
   },
   {
+    comment: 'Method definition'
     match: "(?i)\\b(method)\\s+([a-zA-Z_]\\w*)\\b"
+    captures:
+      "1":
+        name: "storage.modifier.field.monkey"
+      "2":
+        name: "support.function.menthod.monkey"
+    name: "method.monkey"
+  },
+  {
+    comment: 'Function definition'
+    match: "(?i)\\b(function)\\s+([a-zA-Z_]\\w*)\\b"
     captures:
       "1":
         name: "storage.modifier.field.monkey"
