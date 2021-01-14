@@ -64,7 +64,7 @@ patterns : [
   },
   {
     comment: 'Control keywords'
-    match: "(?i)\\b(if|not|then|elseif|else|return|for|next|select|case|wend|while|repeat|until|end|endif)\\b"
+    match: "(?i)\\b(if|not|then|elseif|else|return|for|next|eachin|select|case|wend|while|repeat|until|end|endif)\\b"
     name: "keyword.control.monkey"
   },
   {
@@ -79,7 +79,7 @@ patterns : [
   },
   {
     comment: 'More keywords'
-    match: "(?i)\\b(private|public|strict|import)\\b"
+    match: "(?i)\\b(private|public|strict|import|new)\\b"
     name: "keyword.other.scope.monkey"
   },
   {
