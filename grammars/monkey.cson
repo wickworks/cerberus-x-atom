@@ -91,6 +91,11 @@ patterns : [
     name: "keyword.operator.monkey"
   },
   {
+    comment: 'Array brackets'
+    match: ":?[\\[\\]]"
+    name: "keyword.operator.monkey"
+  },
+  {
     comment: 'Class shortcut symbols'
     match: ":?[%$?]"
     name: "entity.name.type.monkey"
