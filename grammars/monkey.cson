@@ -82,7 +82,7 @@ patterns : [
   },
   {
     comment: 'Math symbols'
-    match: ":?[\\^+\\-&~|=><]"
+    match: ":?[\\^+\\-\\*&~|=><]"
     name: "keyword.operator.monkey"
   },
   {
@@ -162,6 +162,11 @@ patterns : [
       "2":
         name: "entity.name.type.monkey"
     name: "type.monkey"
+  },
+  {
+    comment: 'Classes inside <> list brackets'
+    match: "(?<=\\<)([a-zA-Z_]\\w*)(?=\\>)"
+    name: "entity.name.type.monkey"
   },
   {
     comment: 'Method definition'
