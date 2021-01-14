@@ -7,7 +7,9 @@ fileTypes: [
 limitLineLength: false
 
 # NAME                              COLOR
-# comment.line.monkey               grey
+# comment.line.monkey               dark grey
+
+# entity.other.monkey               unmarked grey
 
 # string.quoted.monkey              green
 
@@ -16,6 +18,7 @@ limitLineLength: false
 
 # storage.type.class.monkey         purple
 # storage.modifier.field.monkey
+# keyword.operator.monkey
 
 # variable.monkey                   red
 
@@ -94,7 +97,7 @@ patterns : [
   },
   {
     comment: 'More keywords'
-    match: "(?i)\\b(private|public|strict|import|new)\\b"
+    match: "(?i)\\b(private|public|strict|import)\\b"
     name: "keyword.other.scope.monkey"
   },
   {
@@ -103,7 +106,7 @@ patterns : [
       "1":
         name: "storage.modifier.global.monkey"
     match: "(?i)\\b(global)\\s+([a-zA-Z_]\\w*)\\b"
-    name: "variable.monkey"
+    name: "entity.other.monkey"
   },
   {
     comment: 'Local declaration'
@@ -111,7 +114,7 @@ patterns : [
       "1":
         name: "storage.modifier.local.monkey"
     match: "(?i)\\b(local)\\s+([a-zA-Z_]\\w*)\\b"
-    name: "variable.monkey"
+    name: "entity.other.monkey"
   },
   {
     comment: 'Field declaration'
@@ -119,7 +122,7 @@ patterns : [
       "1":
         name: "storage.modifier.field.monkey"
     match: "(?i)\\b(field)\\s+([a-zA-Z_]\\w*)+\\b"
-    name: "variable.monkey"
+    name: "entity.other.monkey"
   },
   {
     comment: 'Variable class declaration e.g. variable:Class'
@@ -143,6 +146,16 @@ patterns : [
         name: "entity.other.inherited-class.monkey"
       "5":
         name: "storage.modifier.class.monkey"
+    name: "type.monkey"
+  },
+  {
+    comment: 'Class creation'
+    match: "(?i)\\b(new)\\s+([a-zA-Z_]\\w*)"
+    captures:
+      "1":
+        name: "keyword.operator.monkey"
+      "2":
+        name: "entity.name.type.monkey"
     name: "type.monkey"
   },
   {
