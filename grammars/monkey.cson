@@ -63,8 +63,24 @@ patterns : [
     name: "constant.language.boolean.monkey"
   },
   {
+    comment: 'Control keywords'
     match: "(?i)\\b(if|not|then|elseif|else|return|for|next|select|case|wend|while|repeat|until|end|endif)\\b"
     name: "keyword.control.monkey"
+  },
+  {
+    comment: 'Operator keywords'
+    match: "(?i)\\b(mod|shl|shr|and|or|not)\\b"
+    name: "keyword.operator.monkey"
+  },
+  {
+    comment: 'Math keywords'
+    match: ":?[\\^+\\-&~|=><]"
+    name: "keyword.operator.monkey"
+  },
+  {
+    comment: 'More keywords'
+    match: "(?i)\\b(private|public|strict|import)\\b"
+    name: "keyword.other.scope.monkey"
   },
   {
     comment: 'Global declaration'
