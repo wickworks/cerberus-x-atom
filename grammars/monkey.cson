@@ -67,7 +67,7 @@ patterns : [
   },
   {
     comment: 'Control keywords'
-    match: "(?i)\\b(if|not|then|elseif|else|return|for|next|eachin|select|case|wend|while|repeat|until|end|endif|exit)\\b"
+    match: "(?i)\\b(if|not|then|elseif|else|return|for|next|eachin|select|case|default|wend|while|repeat|until|end|endif|exit)\\b"
     name: "keyword.control.monkey"
   },
   {
