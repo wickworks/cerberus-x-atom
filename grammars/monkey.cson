@@ -102,7 +102,7 @@ patterns : [
   },
   {
     comment: 'More keywords'
-    match: "(?i)\\b(private|public|strict|import|alias|abstract|enumerate)\\b"
+    match: "(?i)\\b(private|public|strict|import|alias|abstract|property|enumerate)\\b"
     name: "keyword.other.scope.monkey"
   },
   {
@@ -130,8 +130,8 @@ patterns : [
     name: "entity.name.type.monkey"
   },
   {
-    comment: 'Class definition'
-    match: "(?i)\\b(class)\\s+([a-zA-Z_]\\w*)(?:\\s+(extends|implements)\\s+([a-zA-Z_]\\w*))?(?:\\s+(final|abstract))?"
+    comment: 'Class/interface definition'
+    match: "(?i)\\b(class|interface)\\s+([a-zA-Z_]\\w*)(?:\\s+(extends|implements)\\s+([a-zA-Z_]\\w*))?(?:\\s+(final|abstract))?"
     captures:
       "1":
         name: "storage.type.class.monkey"
