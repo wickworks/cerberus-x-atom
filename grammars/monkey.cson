@@ -102,7 +102,7 @@ patterns : [
   },
   {
     comment: 'More keywords'
-    match: "(?i)\\b(private|public|strict|import|alias|abstract|property|enumerate)\\b"
+    match: "(?i)\\b(private|public|strict|import|alias|abstract|property|enumerate|continue)\\b"
     name: "keyword.other.scope.monkey"
   },
   {
